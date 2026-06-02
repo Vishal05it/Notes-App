@@ -10,7 +10,7 @@ const userRouter = require("./Router/user.router");
 app.use(express.json());
 connectToDB();
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://notes-app-psi-sandy.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"]
 }));
 app.use("/note/api", notesRouter);

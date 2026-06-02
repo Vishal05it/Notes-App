@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@keyframes deleteNote {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+    position: absolute;
+  }
+}

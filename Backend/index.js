@@ -10,11 +10,11 @@ const userRouter = require("./Router/user.router");
 app.use(express.json());
 connectToDB();
 app.use(cors({
-    origin: "https://notes-app-psi-sandy.vercel.app/",
+    origin: "https://notes-app-psi-sandy.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"]
 }));
 app.use("/note/api", notesRouter);
 app.use("/user/api", userRouter);
 app.listen(PORT, () => {
-    console.log(`Server is running on : http://localhost:${PORT}`);
+    console.log(`Server is running on Port :${PORT}`);
 })
